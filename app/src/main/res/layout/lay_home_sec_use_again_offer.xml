@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/layhomeuseagian_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:visibility="visible">
+
+        <com.dd.ShadowLayout
+            android:id="@+id/shadow_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            app:sl_cornerRadius="10dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow_light"
+            app:sl_shadowRadius="6dp">
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shp_rect_rounded_white">
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/layhomeuseagian_imv_thumbnail"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rmv_place_holder"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    app:civ_border_width="0dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toEndOf="@+id/layhomeuseagian_imv_thumbnail"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/layhomeuseagian_txv_franchise"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="Dominos Food"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/text_gray_light"
+                            android:textSize="@dimen/fontsize_mini" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/layhomeuseagian_txv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/textview_font_margin_top"
+                        android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingBottom="@dimen/textview_font_padding_bottom"
+                        android:text="Food and\nDrinks"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textColorPrimaryDark"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+
+                        <TextView
+                            android:id="@+id/layhomeuseagian_txv_savings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="Save QAR"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/thm_accent_cyan"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </com.dd.ShadowLayout>
+    </RelativeLayout>
+</RelativeLayout>

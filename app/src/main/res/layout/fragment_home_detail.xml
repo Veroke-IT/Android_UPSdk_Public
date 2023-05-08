@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/frg_home_detail_rl_main_cntnr_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/lay_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_xlarge"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rg_home_detail_tool_bar_rl_back"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/app_bar_imv_back"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icn_arrow_back_gray" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_toEndOf="@+id/rg_home_detail_tool_bar_rl_back"
+                    android:id="@+id/frg_home_detail_tool_bar_txv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="@dimen/textview_font_padding_bottom"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="@color/thm_red_logo"
+                    android:textSize="@dimen/fontsize_small"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:id="@+id/frg_home_detail_tool_bar_rl_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icn_search_gray" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="0dp">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="@color/gray"
+                    app:layout_scrollFlags="scroll|snap"
+                    app:statusBarScrim="@null">
+
+                    <LinearLayout
+                        android:id="@+id/frg_ll_section_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.dd.ShadowLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="10dp"
+                        app:sl_cornerRadius="30dp"
+                        app:sl_dx="0dp"
+                        app:sl_dy="0dp"
+                        app:sl_shadowColor="@color/thm_shadow_light"
+                        app:sl_shadowRadius="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/frg_category_outlets_parent_hub_rl_tab_switcher_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <RelativeLayout
+                                android:id="@+id/frg_category_outlets_parent_hub_rl_tab_nearby"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <CheckBox
+                                    android:id="@+id/frg_category_outlets_parent_hub_cb_tab_nearby"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_outlet_listing_tab_nearby"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:id="@+id/frg_category_outlets_parent_hub_txv_tab_nearby"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                                    android:paddingTop="@dimen/textview_font_padding_top"
+                                    android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+                                    android:text="@string/btn_by_location"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/fontsize_mini"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/frg_category_outlets_parent_hub_rl_tab_alphabetical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <CheckBox
+                                    android:id="@+id/frg_category_outlets_parent_hub_cb_tab_alphabetical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_outlet_listing_tab_alphabetical"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:id="@+id/frg_category_outlets_parent_hub_txv_tab_alphabetical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                                    android:paddingTop="@dimen/textview_font_padding_top"
+                                    android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+                                    android:text="@string/btn_alphabetically"
+                                    android:textSize="@dimen/fontsize_mini"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </com.dd.ShadowLayout>
+
+                    <androidx.viewpager.widget.ViewPager
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:layout_below="@+id/frg_home_detail_rl_main_cntnr_bg"
+                        android:id="@+id/frg_credential_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:rotationY="@integer/view_pager_rotation" />
+                </LinearLayout>
+
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

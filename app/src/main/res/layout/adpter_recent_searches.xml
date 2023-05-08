@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/adptr_recent_search_rl_history"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/adptr_autocmplt_search_imv_history"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icn_recent_search_history"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_txv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adptr_autocmplt_seatch_txv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="McDonald"
+                android:textColor="@color/thm_accent_cyan"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/adptr_recent_search_rl_delete"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/adptr_autocmplt_search_imv_location"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:alpha="0.7"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icn_cross_grey"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/thm_bg_loader"
+        android:visibility="gone" />
+
+</LinearLayout>

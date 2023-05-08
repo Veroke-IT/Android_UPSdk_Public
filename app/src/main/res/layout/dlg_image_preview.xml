@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_menu_transparent_black"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/app_bar_rl_back"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/app_bar_imv_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:tint="@color/white"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icn_cross_grey" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/app_bar_txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/textview_font_margin_top"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingEnd="10dp"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:text="@string/frg_merchant_detail_menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/top_view"
+        android:id="@+id/frg_full_screen_view_pagr"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/dlg_image_view_ll_counter"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/dlg_image_view_ll_counter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_large"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/dlg_image_view_imv_previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            app:tint="@color/white"
+            android:rotation="180"
+            android:src="@drawable/icn_img_next_prev" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dlg_image_view_txv_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1/3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/dlg_image_view_imv_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+
+            app:tint="@color/white"
+            android:src="@drawable/icn_img_next_prev" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

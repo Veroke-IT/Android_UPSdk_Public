@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/white_rounded_gray_stroke">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/adptr_offer_txv_confirmation_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingBottom="@dimen/textview_font_padding_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/confirmation_id"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_gray_light"
+                    android:textSize="@dimen/fontsize_mini" />
+
+                <TextView
+                    android:id="@+id/adptr_offer_txv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingBottom="@dimen/textview_font_padding_bottom"
+                    android:text="March 30,2020"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_gray_light_delivery"
+                    android:textSize="@dimen/fontsize_mini" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:paddingTop="5dp"
+                    android:id="@+id/LogoImageLayout"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/adptr_fav_imv_category_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rmv_place_holder"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="@color/bg_light_gray"
+                        app:civ_border_width="2dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/LogoImageLayout"
+                    android:minHeight="30dp"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="00dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="20dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:textColor="@color/gray_offers"
+                            android:id="@+id/adptr_fav_txv_merchant_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:lines="1"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_top"
+                            android:text="Macdonald"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/gray_offers"
+
+                            android:id="@+id/adptr_fav_txv_offr_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="But 1 Burger Get 1 Free at Capabacana"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fontsize_mini"
+                            />
+
+
+                        <TextView
+                            android:textColor="@color/gray_offers"
+
+                            android:id="@+id/adptr_fav_txv_approx_savings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="Save 60 QAR"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/fontsize_mini" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

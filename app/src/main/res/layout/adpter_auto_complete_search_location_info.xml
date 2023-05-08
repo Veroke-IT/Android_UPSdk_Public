@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/adptr_autocmplt_search_imv_location"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/text_gray_light"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/adptr_autocmplt_search_imv_location"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adptr_autocmplt_seatch_txv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="McDonald"
+                android:textColor="@color/thm_accent_cyan"
+                android:textSize="@dimen/fontsize_small"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/adptr_autocmplt_seatch_txv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="Street no 1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adptr_autocmplt_seatch_txv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="3.5 Km"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/thm_bg_loader"
+        android:visibility="gone" />
+
+</LinearLayout>

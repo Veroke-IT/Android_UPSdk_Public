@@ -1,0 +1,48 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--Upper n bottom edge rectangle-->
+    <item>
+        <shape android:shape="rectangle" >
+            <corners android:radius="16dp" />
+            <gradient
+                android:angle="90"
+                android:centerColor="@color/thm_gift_divider"
+                android:endColor="@color/thm_gift_divider"
+                android:startColor="@color/thm_gift_divider"
+                android:type="linear" />
+
+
+        </shape>
+    </item>
+
+    <!--right n left edge rectangle-->
+    <item
+        android:top="5dp"
+        android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+
+            <gradient
+                android:angle="180"
+                android:centerColor="@color/black"
+                android:endColor="@color/thm_gift_divider"
+                android:startColor="@color/thm_gift_divider"
+                android:type="linear" />
+
+
+        </shape>
+    </item>
+
+    <!--center solid rectangle-->
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle" >
+            <corners android:radius="14dp" />
+            <solid android:color="#fff" />
+        </shape>
+    </item>
+
+</layer-list>

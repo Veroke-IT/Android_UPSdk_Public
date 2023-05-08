@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="pinenteryview_font_padding_top">-5dp</dimen>
+
+
+    --------------------------------------------------------
+    <!--    new UI Dimens start here    -->
+    <!--7dp-->
+    <dimen name="edttext_font_padding">0dp</dimen><!--13dp-->
+
+    <dimen name="textview_font_margin_top">-6dp</dimen>
+    <dimen name="textview_font_margin_top_setting">-3dp</dimen>
+    <dimen name="textview_font_margin_bottom">0dp</dimen>
+    <dimen name="textview_font_padding_top">0dp</dimen><!--3dp-->
+    <dimen name="textview_font_padding_bottom">0dp</dimen>
+
+    <dimen name="buttonview_font_margin_top">0dp</dimen>
+    <dimen name="buttonview_font_margin_bottom">0dp</dimen>
+    <dimen name="buttonview_font_padding_top">0dp</dimen><!--3dp-->
+    <dimen name="buttonview_font_padding_bottom">6dp</dimen>
+
+
+    <!-- side drawer sizes size -->
+
+
+    <dimen name="fontsize_xlarge">21sp</dimen>
+    <dimen name="fontsize_large">19sp</dimen>
+    <dimen name="fontsize_medium">17sp</dimen>
+    <dimen name="fontsize_normal">15sp</dimen>
+    <dimen name="fontsize_small">13sp</dimen>
+    <dimen name="fontsize_mini">11sp</dimen>
+    <dimen name="fontsize_tiny">9sp</dimen>
+    <dimen name="fontsize_minute">7.5sp</dimen>
+    <dimen name="fontsize_micro">6sp</dimen>
+    <!--SPECAIL CASE (using fontsize_tiny) -->
+
+
+    <dimen name="laypromosxgyf_marginbottom">-6dp</dimen>
+</resources>

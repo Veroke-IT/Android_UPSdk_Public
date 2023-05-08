@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".SettingsUpFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/up_logo" />
+
+            <ImageView
+                android:id="@+id/frg_setting_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icn_close_settings" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frg_settings_use_offer_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_xxmedium"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/frg_settings_used_offers"
+                android:textAlignment="viewStart"
+                android:textColor="@color/txt_gray_dark_delivery"
+                android:textSize="@dimen/fontsize_mini"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                app:tint="@color/light_gray_tracking_line"
+                android:src="@drawable/icn_fwd_arrow_grey" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/light_gray_tracking_line" />
+
+        <RelativeLayout
+            android:id="@+id/frg_settings_terms_of_use"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_xxmedium"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/frg_settings_terms_of_user"
+                android:textAlignment="viewStart"
+                android:textColor="@color/txt_gray_dark_delivery"
+                android:textSize="@dimen/fontsize_mini"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                app:tint="@color/light_gray_tracking_line"
+                android:src="@drawable/icn_fwd_arrow_grey" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/light_gray_tracking_line" />
+
+        <RelativeLayout
+            android:id="@+id/frg_settings_up_access"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_xxmedium"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/frg_settings_up_access"
+                android:textAlignment="viewStart"
+                android:textColor="@color/txt_gray_dark_delivery"
+                android:textSize="@dimen/fontsize_mini"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/frg_settings_day_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="--"
+                android:textAlignment="viewStart"
+                android:textColor="@color/txt_gray_dark_delivery"
+                android:textSize="@dimen/fontsize_mini"
+
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/light_gray_tracking_line" />
+
+        <RelativeLayout
+            android:id="@+id/frg_account_rl_language"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_xxmedium"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/frg_account_txv_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/frg_settings_language"
+                android:textAlignment="viewStart"
+                android:textColor="@color/txt_gray_dark_delivery"
+                android:textSize="@dimen/fontsize_mini"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/frg_account_txv_eng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/textview_font_padding_bottom"
+                    android:text="English"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/txt_gray_dark_delivery"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="normal" />
+
+                <Switch
+                    android:id="@+id/frg_settings_sw_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:thumbTint="@color/thm_accent_cyan"
+                    android:trackTint="@color/text_gray_light_delivery" />
+
+                <TextView
+                    android:id="@+id/frg_account_txv_arb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/textview_font_padding_bottom"
+                    android:text="عربي"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/txt_gray_dark_delivery"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frg_setting_back_to_orredoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/thm_accent_cyan"
+            android:src="@drawable/icn_arrow_back_gray" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/textview_font_margin_top_setting"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingEnd="10dp"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:text="@string/frg_settings_back_to_ooredoo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/thm_accent_cyan"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

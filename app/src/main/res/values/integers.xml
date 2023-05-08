@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--TODO apply these values in textfields-->
+    <integer name="max_length_name">50</integer>
+    <integer name="max_length_email">50</integer>
+    <integer name="max_length_password">4</integer>
+    <integer name="max_length_phone">9</integer>
+    <integer name="max_length_phone_nospace">8</integer>
+    <integer name="max_length_phone_with_code">13</integer>
+    <integer name="max_length_address">300</integer>
+    <integer name="max_length_street">100</integer>
+    <integer name="max_length_building">100</integer>
+    <integer name="max_length_floor">100</integer>
+    <integer name="max_length_office">100</integer>
+    <integer name="max_length_details">1000</integer>
+
+    <integer name="view_pager_rotation">0</integer>
+
+</resources>

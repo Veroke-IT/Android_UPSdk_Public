@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">UrbanPoint OM SDK.</string>
+
+    <!--    Home Fragment    -->
+    <string name="frg_home_where">Where do you want to save today?</string>
+    <string name="frg_home_use_again">Offers you can use again</string>
+    <string name="frg_home_new_brands">New brands</string>
+    <string name="frg_home_pop_categries">Popular categories</string>
+    <string name="frg_home_recent_viewed">Recently viewed</string>
+    <string name="frg_home_offers_nearby">Outlets nearby</string>
+    <string name="frg_home_offers_nearby_count">Offers available</string>
+    <string name="frg_home_tab_home">Home</string>
+    <string name="frg_home_tab_messages">Messages</string>
+
+    <!--    Settings-->
+    <string name="frg_settings_used_offers">Your used offers</string>
+    <string name="frg_settings_terms_of_user">Terms of Use</string>
+    <string name="frg_settings_up_access">Urban Point access</string>
+    <string name="frg_settings_up_access_days">days left</string>
+    <string name="frg_settings_language">Language</string>
+    <string name="frg_settings_back_to_ooredoo">Go back to Ooredoo Money</string>
+
+    <!--    Merchant Detail-->
+    <string name="frg_merchant_detail_menu">Menu</string>
+    <string name="frg_merchant_detail_call">Call</string>
+    <string name="frg_merchant_detail_find_it">Find it</string>
+    <string name="frg_merchant_detail_fragment_offers">Available Offers</string>
+    <string name="frg_merchant_detail_outlet_details">Outlet Details</string>
+    <string name="frg_merchant_detail_fragment_openining_hours">Opening hours</string>
+    <string name="frg_merchant_detail_fragment_is_open">Open now</string>
+    <string name="frg_merchant_detail_fragment_weekdays">Sat - Wed:</string>
+    <string name="frg_merchant_detail_fragment_weekends">Thu - Fri:</string>
+    <string name="frg_merchant_detail_no_outlets_found">No Outlets Found</string>
+
+    <string name="frg_search_offers">Search</string>
+    <string name="frg_search_hint">Brands, offers, locations, etc.</string>
+    <string name="frg_search_error">Hey! We don\'t have what you are looking for, but we will work on getting it soon!</string>
+    <string name="frg_search_trending">Trending Searches</string>
+
+
+    <string name="adptr_expendible_merchintlst_save">Save </string>
+    <string name="adptr_expendible_merchintlst_percentage">% OFF</string>
+
+    <string name="dlg_offer_detail_heading_1">Details &amp; Exclusions</string>
+    <string name="dlg_offer_detail_terms_of_use">Offers are subject to <font fgcolor='#20A0A0'>Terms of Service</font> </string>
+    <string name="dlg_offer_detail_save_approx">Save approximately</string>
+    <string name="dlg_offer_detail_save_approx_text">You saved approximately</string>
+    <string name="dlg_offer_detail_save_approx_text2">You save approximately</string>
+
+
+    <string name="btn_view_all">VIEW ALL</string>
+    <string name="btn_view_less">VIEW LESS</string>
+    <string name="btn_use_offer_small">Use Offer</string>
+    <string name="btn_used_offer_small">Offer used</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_okay">Okay</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_cancel_caps">CANCEL</string>
+    <string name="btn_alphabetically">Alphabetical</string>
+    <string name="btn_by_location">Nearby</string>
+    <string name="btn_offers_used">Offers</string>
+
+    <string name="btn_submit">Submit</string>
+    <string name="btn_confrim">Confirm</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_allow">Allow</string>
+    <string name="btn_not_now">Not Now</string>
+
+    <string name="serach_offer">Search Offers</string>
+    <string name="confirmation_number">Confirmation Number</string>
+    <string name="confirmation_id">Confirmation ID:</string>
+    <string name="no_data_found">Oops! Something went wrong</string>
+    <string name="no_offers_found">No Data Found</string>
+    <string name="no_outlets_found">No Outlets Found</string>
+    <string name="no_offers_found_in_merchant">This brand does not have any active offers</string>
+    <string name="show_to_user">Please let the <font fgcolor='#FF001F'>staff</font> enter their <font fgcolor='#FF001F'>outlet PIN</font></string>
+    <string name="show_to_user_2">You should present this screen at the outlet</string>
+
+    <string name="hide_offers">Hide all offers</string>
+    <string name="see_offers">View all offers</string>
+
+    <string name="txv_qatar_riyal">QAR </string>
+
+    <string name="offer_redeemed_desc">Offer used: Renews on </string>
+    <string name="dlg_offer_used">Offer Used</string>
+    <string name="adptr_expendible_merchintlst_with_in">Within</string>
+    <string name="dlg_offer_expires_on">"Offer expires on "</string>
+    <string name="btn_un_lock_offers_small">Unlock Offers</string>
+
+    <string name="contextual_messages_heading_small">Always know what\'s around</string>
+    <string name="contextual_messages">Enable location to sort offers based on\n their distance from you.</string>
+
+    <string name="gps_connection_heading">GPS Connection</string>
+    <string name="gps_connection_message">Please wait, while your GPS is trying to get your location.</string>
+    <string name="multiple_location">Multiple Locations</string>
+
+    <string name="frg_use_again">Re-Use Offers</string>
+    <string name="frg_offer_used">Used Offers</string>
+    <string name="invalid__merchint_phone_number">Phone Number is not valid</string>
+    <string name="call_outlet">Call outlet</string>
+    <string name="contextual_uber_messages">Please enable location permission to request an Uber ride.</string>
+    <string name="contextual_uber_btn">Enable</string>
+
+    <string name="frg_new_brands">New Brands</string>
+    <string name="frg_nearby_outlets">Nearby Outlets</string>
+
+    <string name="OfferErrorMessage">Invalid Offer</string>
+    <string name="MerchantErrorMessage">Please enter merchant PIN</string>
+
+    <string name="festival_ramadan" translatable="false">ramadan</string>
+    <string name="festival_burger" translatable="false">burger</string>
+    <string name="festival_food_delivery" translatable="false">food_delivery</string>
+    <string name="festival_biryani" translatable="false">biryani</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+
+</resources>

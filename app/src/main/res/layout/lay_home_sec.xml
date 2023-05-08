@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/layhomsec_txv_ttl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_top"
+            android:text="@string/frg_home_use_again"
+            android:textColor="@color/textColorPrimaryDark"
+            android:textSize="@dimen/fontsize_small"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layhomsec_btn_viewall"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height_xxmedium"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/layhomsec_txv_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingBottom="@dimen/textview_font_padding_top"
+                android:text="@string/btn_view_all"
+                android:textColor="@color/thm_accent_cyan"
+                android:textSize="@dimen/fontsize_mini"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layhomsec_rcv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:layout_marginStart="0dp" />
+
+
+
+
+</LinearLayout>

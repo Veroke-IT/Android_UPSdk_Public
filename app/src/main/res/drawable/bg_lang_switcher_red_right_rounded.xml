@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the line -->
+    <item>
+
+
+        <shape
+            android:shape="rectangle">
+            <padding android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+            <solid android:color="@color/bg_gray_drop_down" />
+            <corners android:topRightRadius="@dimen/button_radius_xxmedium"
+                android:bottomRightRadius="@dimen/button_radius_xxmedium"/>
+
+        </shape>
+    </item>
+    <!-- This is the main color -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners android:topRightRadius="@dimen/button_radius_xxmedium"
+                android:bottomRightRadius="@dimen/button_radius_xxmedium"/>
+            <solid android:color="@color/thm_red_delivery" />
+
+
+        </shape>
+    </item>
+</layer-list>
+
+

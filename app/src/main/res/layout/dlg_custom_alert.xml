@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/slc_btn_confirm"
+            android:backgroundTint="@color/light_gray_tracking_line" />
+
+
+        <TextView
+            android:id="@+id/dlg_cstm_alrt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:text="@string/app_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dlg_cstm_alrt_text_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/fontsize_mini"
+            android:text="@string/app_name"
+            android:textStyle="normal" />
+
+
+
+        <Button
+            android:id="@+id/dlg_cstm_alrt_btn_ok"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_red_rounded_small"
+            android:paddingTop="@dimen/buttonview_font_padding_top"
+            android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+            android:text="@string/btn_okay"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="@null" />
+
+
+        <View
+            android:id="@+id/dlg_cstm_alrt_separator"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:background="@color/bg_divider_gray"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/dlg_cstm_alrt_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/buttonview_font_margin_top"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/buttonview_font_padding_top"
+            android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+            android:text="@string/btn_cancel"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+</RelativeLayout>

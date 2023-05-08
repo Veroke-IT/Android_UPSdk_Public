@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_white_rounded_xmedium"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/slc_btn_confirm"
+            android:backgroundTint="@color/light_gray_tracking_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/gray"
+                android:id="@+id/dlg_cstm_alrt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/call_outlet"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dlg_multiple_phone_number_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/lay_item_multiple_phone_number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

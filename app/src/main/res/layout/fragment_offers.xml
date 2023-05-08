@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_large">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp">
+
+            <RelativeLayout
+                android:id="@+id/frg_offers_rl_back"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/app_bar_imv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icn_arrow_back_gray" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textview_font_margin_top"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+        android:layout_marginStart="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="@dimen/textview_font_padding_top"
+        android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+        android:text="@string/frg_offer_used"
+        android:textAlignment="viewStart"
+        android:textColor="@color/thm_red_logo"
+        android:textSize="@dimen/fontsize_medium"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <ListView
+            android:id="@+id/frg_new_offers_lst_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:visibility="gone">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/frg_new_offers_txv_nt_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_offers_found"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_top"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fontsize_small"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

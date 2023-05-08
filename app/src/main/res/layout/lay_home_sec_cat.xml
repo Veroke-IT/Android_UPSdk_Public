@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layhomcat_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:visibility="visible">
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            app:sl_cornerRadius="10dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow_light"
+            app:sl_shadowRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/shp_rect_rounded_white">
+
+
+                <com.example.android_up_sdk.Utils.RoundedCornerImageView
+                    android:id="@+id/layhomcat_imv_thumbnail"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder_icon" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_dark_gray"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:visibility="gone">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/layhomcat_imv_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/layhomcat_txv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_toEndOf="@+id/layhomcat_imv_icon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingStart="5dp"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="@dimen/textview_font_padding_top"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="10"
+                        android:text="Food and\nDrinks"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </com.dd.ShadowLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

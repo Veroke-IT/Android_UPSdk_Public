@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UrbanPoint OM SDK.</string>
+
+    <!--    Home Fragment    -->
+    <string name="frg_home_where">اين تود أن تدّخر اليوم؟</string>
+    <string name="frg_home_use_again">العروض التي يمكنك استخدامها مرة أخرى</string>
+    <string name="frg_home_new_brands">الماركات الجديدة</string>
+    <string name="frg_home_pop_categries">التصنيفات المشهورة</string>
+    <string name="frg_home_recent_viewed">مشاهداتك الأخيرة</string>
+    <string name="frg_home_offers_nearby">محلات قريبة</string>
+    <string name="frg_home_offers_nearby_count">عروض متاحه</string>
+    <string name="frg_home_tab_home">الصفحة الرئيسية</string>
+    <string name="frg_home_tab_messages">التنبيهات</string>
+
+    <!--    Settings-->
+    <string name="frg_settings_used_offers">العروض المستخدمة</string>
+    <string name="frg_settings_terms_of_user">شروط الاستخدام</string>
+    <string name="frg_settings_up_access">باقي على اشتراك أوربان بوينت</string>
+    <string name="frg_settings_up_access_days">متبقي يوم</string>
+    <string name="frg_settings_language">اللغات</string>
+    <string name="frg_settings_back_to_ooredoo">الرجوع الى Ooredoo money</string>
+
+    <!--    Merchant Detail-->
+    <string name="frg_merchant_detail_menu">قائمة</string>
+    <string name="frg_merchant_detail_call">اتصل</string>
+    <string name="frg_merchant_detail_find_it">تجدها</string>
+    <string name="frg_merchant_detail_fragment_offers">عروض</string>
+    <string name="frg_merchant_detail_outlet_details">تفاصيل البائع</string>
+    <string name="frg_merchant_detail_fragment_openining_hours">ساعات العمل</string>
+    <string name="frg_merchant_detail_fragment_is_open">افتح الان</string>
+    <string name="frg_merchant_detail_fragment_weekdays">الاحد- الاربعاء:</string>
+    <string name="frg_merchant_detail_fragment_weekends">الخميس - الجمعة:</string>
+    <string name="frg_merchant_detail_no_outlets_found">لا توجد محلات</string>
+
+
+    <string name="adptr_expendible_merchintlst_save">وفر </string>
+    <string name="adptr_expendible_merchintlst_percentage">خصم %</string>
+
+    <string name="dlg_offer_detail_heading_1">التفاصيل و الاستثنائات</string>
+    <string name="dlg_offer_detail_terms_of_use">تخضع العروض <font fgcolor='#20A0A0'>لشروط الاستخدام</font> </string>
+    <string name="dlg_offer_detail_save_approx">وفّر تقريبا.</string>
+    <string name="dlg_offer_detail_save_approx_text">وفّر تقريبا.</string>
+    <string name="dlg_offer_detail_save_approx_text2">وفّر تقريبا.</string>
+    <string name="btn_view_all">العرض الكامل</string>
+    <string name="btn_view_less">عرض أقل</string>
+    <string name="btn_use_offer_small">استخدم العرض</string>
+    <string name="btn_used_offer_small">العرض مستخدم</string>
+    <string name="btn_share">شارك</string>
+    <string name="btn_okay">موافق</string>
+    <string name="btn_confirm">تأكيد</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="btn_cancel_caps">إلغاء</string>
+    <string name="btn_alphabetically">بالترتيب الأبجدي</string>
+    <string name="btn_by_location">حسب الموقع</string>
+    <string name="btn_offers_used">عروض</string>
+    <string name="btn_submit">تقديم</string>
+    <string name="btn_confrim">تأكيد</string>
+    <string name="btn_done">تم</string>
+    <string name="btn_allow">السماح</string>
+    <string name="btn_not_now">ليس الآن</string>
+
+
+    <string name="serach_offer">بحث العروض</string>
+    <string name="confirmation_number">رقم هاتفك</string>
+    <string name="confirmation_id">رقم هاتفك:</string>
+    <string name="no_data_found">عفوا! هناك خطأ ما</string>
+    <string name="no_offers_found">لاتوجد بيانات</string>
+    <string name="no_outlets_found">لا توجد محلات</string>
+    <string name="frg_search_offers">بحث</string>
+    <string name="frg_search_hint">العلامات التجارية، العروض، المواقع</string>
+    <string name="frg_search_error">مهلا! ليس لدينا ما تبحث عنه ، ولكن سنعمل على الحصول عليه قريبا</string>
+    <string name="frg_search_trending">الأكثر رواجا</string>
+    <string name="no_offers_found_in_merchant">هذا المحل لايقدم عروض حاليا</string>
+    <string name="show_to_user">أظهر هذه الشاشة للتاجر لتحصل على العرض</string>
+    <string name="show_to_user_2"></string>
+
+    <string name="hide_offers">إخفي كل العروض</string>
+    <string name="see_offers">أظهر كل العروض</string>
+
+
+    <string name="txv_qatar_riyal">QAR </string>
+
+    <string name="offer_redeemed_desc">Offer used: Renews on </string>
+    <string name="dlg_offer_used">العرض مستخدم</string>
+    <string name="adptr_expendible_merchintlst_with_in">خلال</string>
+    <string name="dlg_offer_expires_on">تنتهي صلاحية العرض في</string>
+    <string name="btn_un_lock_offers_small">فتح العروض</string>
+
+    <string name="contextual_messages_heading_small">كن دائما على معرفة بكل جديد</string>
+    <string name="contextual_messages">الرجاء تشغيل خاصية الموقع لترتيب العروض حسب مسافتها منك</string>
+
+    <string name="gps_connection_heading">اتصال بنظام تحديد المواقع</string>
+    <string name="gps_connection_message">الرجاء الانتظار، بينما يحاول نظام تحديد المواقع بتحديد موقعك.</string>
+    <string name="multiple_location">مواقع متعدّدة</string>
+
+    <string name="frg_use_again">أعد استخدام العروض</string>
+    <string name="frg_offer_used">العروض المستخدمة</string>
+    <string name="invalid__merchint_phone_number">رقم الهاتف غير صالح</string>
+    <string name="call_outlet">إتصل بالمحل</string>
+    <string name="contextual_uber_messages">الرجاء السماح بخاصية الموقع لطلب توصيلة أوبر..</string>
+    <string name="contextual_uber_btn">تمكين</string>
+
+    <string name="frg_new_brands">الماركات الجديدة</string>
+    <string name="frg_nearby_outlets">محلات قريبة</string>
+
+    <string name="OfferErrorMessage">العرض غير متوفر</string>
+    <string name="MerchantErrorMessage">الرجاء إدخال كود التاجر</string>
+
+
+
+</resources>

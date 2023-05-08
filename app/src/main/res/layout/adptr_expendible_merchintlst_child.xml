@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/adptr_expendible_merchintlst_child_rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_expdbl_chld_center">
+
+        <com.dd.ShadowLayout
+            android:id="@+id/shadow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="1dp"
+            app:sl_cornerRadius="15dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow_light"
+            app:sl_shadowRadius="6dp">
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+
+                android:background="@drawable/shp_rect_rounded_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/adptr_expendible_merchintlst_child_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/textview_font_margin_top"
+                        android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                        android:lines="2"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingBottom="@dimen/textview_font_padding_bottom"
+                        android:text="Buy one main course and get a main course free"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/adptr_expendible_merchintlst_child_savings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="hello"
+                            android:textColor="@color/thm_red_delivery"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/adptr_expendible_merchintlst_child_offer_used"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/textview_font_margin_top"
+                            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                            android:paddingTop="@dimen/textview_font_padding_top"
+                            android:paddingBottom="@dimen/textview_font_padding_bottom"
+                            android:text="Offer Used: Renews On 10/10/10"
+                            android:textColor="@color/text_gray_unselected_menu"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </com.dd.ShadowLayout>
+
+        <RelativeLayout
+            android:id="@+id/adptr_expendible_merchintlst_child_rl_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/shadow_layout"
+            android:background="@color/transparent">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentEnd="true"
+            android:id="@+id/adptr_expendible_merchintlst_child_rl_end_cntnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/expllContainrIcn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-6dp"
+                android:minWidth="20dp"
+                android:minHeight="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/adptr_expendible_merchintlst_rl_festivalImage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent">
+
+                    <ImageView
+                        android:id="@+id/adptr_expendible_merchintlst_festivalImage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/icn_special_other"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/adptr_expendible_merchintlst_expfoodShowLockOffersIcon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@null"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

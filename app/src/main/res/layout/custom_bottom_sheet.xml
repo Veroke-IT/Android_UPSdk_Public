@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/slc_btn_confirm"
+            android:backgroundTint="@color/light_gray_tracking_line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/dialog_positive_btn"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_red_rounded_small"
+            android:text="@string/btn_okay"
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimaryLight"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            app:backgroundTint="@null"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/dlg_bottom_sheet_separator"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:background="@color/bg_divider_gray"
+            android:visibility="gone" />
+
+
+
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/dialog_negative_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/buttonview_font_margin_top"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null"
+            android:paddingTop="@dimen/buttonview_font_padding_top"
+            android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+            android:text="@string/btn_cancel"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_mini"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="0dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_large">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingStart="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/frg_category_outlets_parent_hub_rl_back"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/app_bar_imv_back"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icn_arrow_back_gray" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/frg_category_outlets_parent_hub_txv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="@dimen/textview_font_margin_top"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/textview_font_padding_top"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+                    android:text="Home"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/thm_red_logo"
+                    android:textSize="@dimen/fontsize_small"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/frg_category_outlets_parent_hub_rl_search_cntnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_medium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/gray_rounded_border_3"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icn_search_gray" />
+
+                    <EditText
+                        android:id="@+id/frg_category_outlets_parent_hub_edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_toStartOf="@+id/frg_category_outlets_ll_cntnr"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/serach_offer"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/gray"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="@dimen/fontsize_small" />
+
+                    <LinearLayout
+                        android:id="@+id/frg_category_outlets_ll_cntnr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+                        <RelativeLayout
+                            android:id="@+id/frg_category_outlets_parent_hub_rl_close"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/btn_clear"
+                                android:layout_width="20dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/icn_close"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/frg_category_outlets_parent_hub_rl_progressbar"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:paddingEnd="5dp"
+                            android:visibility="gone">
+
+                            <ProgressBar
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:indeterminateTint="@color/black" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/frg_category_outlets_parent_hub_rl_btn_search"
+                    android:layout_width="60dp"
+                    android:layout_height="@dimen/button_height_medium"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+
+                    <ImageView
+                        android:id="@+id/frg_category_outlets_parent_hub_imv_search"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icn_search_gray" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            app:sl_cornerRadius="30dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="@color/thm_shadow_light"
+            app:sl_shadowRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/frg_category_outlets_parent_hub_rl_tab_switcher_parent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:id="@+id/frg_category_outlets_parent_hub_rl_tab_nearby"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/frg_category_outlets_parent_hub_cb_tab_nearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_outlet_listing_tab_nearby"
+                        android:button="@null"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/frg_category_outlets_parent_hub_txv_tab_nearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/textview_font_margin_top"
+                        android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+                        android:text="@string/btn_by_location"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frg_category_outlets_parent_hub_rl_tab_alphabetical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                        android:id="@+id/frg_category_outlets_parent_hub_cb_tab_alphabetical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_outlet_listing_tab_alphabetical"
+                        android:button="@null"
+                        android:checked="false"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/frg_category_outlets_parent_hub_txv_tab_alphabetical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/textview_font_margin_top"
+                        android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingBottom="@dimen/buttonview_font_padding_bottom"
+                        android:text="@string/btn_alphabetically"
+                        android:textSize="@dimen/fontsize_mini"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </com.dd.ShadowLayout>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/frg_credential_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotationY="@integer/view_pager_rotation" />
+
+</LinearLayout>

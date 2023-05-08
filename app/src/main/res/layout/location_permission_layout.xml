@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white_rounded_xmedium"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp">
+
+
+        <ImageView
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"
+            android:src="@mipmap/locations_orange"
+            />
+
+        <TextView
+            android:id="@+id/contextual_txv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:textStyle="bold"
+            android:text="@string/contextual_messages_heading_small"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontsize_small" />
+
+
+        <TextView
+            android:id="@+id/contextual_txv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="@dimen/textview_font_margin_top"
+            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:text="@string/contextual_messages"
+            android:textAlignment="center"
+            android:textSize="@dimen/fontsize_mini" />
+
+    </LinearLayout>
+
+</RelativeLayout>

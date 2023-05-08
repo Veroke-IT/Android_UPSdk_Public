@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/app_bar_rl_back"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/app_bar_imv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icn_arrow_back_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/app_bar_txv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/textview_font_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/textview_font_padding_top"
+                android:paddingEnd="10dp"
+                android:paddingBottom="@dimen/textview_font_padding_bottom"
+                android:text="@string/frg_search_offers"
+                android:textAlignment="viewStart"
+                android:textColor="@color/thm_red_delivery"
+                android:textSize="@dimen/fontsize_xlarge"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/frg_searchoffr_ll_cntnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_view"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/frg_searchoffr_ll_search_cntnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/frg_searchoffr_rl_search_cntnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height_xxmedium"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/gray_outline_search_rounded_corner"
+                    android:orientation="horizontal"
+                    android:paddingStart="5dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        app:tint="@color/light_gray_tracking_line"
+                        android:src="@drawable/icn_search_gray" />
+
+                    <EditText
+                        android:id="@+id/frg_searchoffr_edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/frg_searchoffr_ll_cntnr2"
+                        android:background="@null"
+                        android:hint="@string/frg_search_hint"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textNoSuggestions"
+                        android:paddingStart="40dp"
+                        android:paddingTop="@dimen/textview_font_padding_top"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="@dimen/textview_font_padding_top"
+                        android:singleLine="true"
+                        android:textColorHint="@color/light_gray_tracking_line"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="@dimen/fontsize_small" />
+
+                    <LinearLayout
+                        android:id="@+id/frg_searchoffr_ll_cntnr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/frg_searchoffr_ll_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/btn_clear"
+                                android:layout_width="20dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/icn_close"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/frg_searchoffr_ll_progressbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="10dp"
+                            android:visibility="gone">
+
+                            <ProgressBar
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:indeterminateTint="@color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/frg_searchoffr_txv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="20dp"
+                    android:text="@string/btn_cancel_caps"
+                    android:textColor="@color/txt_dark_green_contact_us_level_c"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/frg_searchoffr_offers_txv_nt_found"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="35dp"
+            android:gravity="center"
+            android:paddingTop="@dimen/textview_font_padding_top"
+            android:paddingBottom="@dimen/textview_font_padding_top"
+            android:text="@string/frg_search_error"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fontsize_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/frg_searchoffr_txv_recent_searches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="@dimen/textview_font_margin_top"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/textview_font_margin_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="@dimen/textview_font_padding_bottom"
+            android:text="@string/frg_search_trending"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/fontsize_small"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/frg_searchoffr_lsv_autocomplte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:layoutAnimation="@anim/anim_pointer"
+            android:paddingStart="30dp"
+
+            android:visibility="gone" />
+
+
+        <ListView
+            android:id="@+id/frg_searchoffr_lsv_recent_searches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_searchoffr_ll_search_cntnr"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:id="@+id/frg_searchoffr_offers_lst_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frg_searchoffr_ll_cntnr"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:layoutAnimation="@anim/anim_pointer"
+            android:listSelector="@color/transparent"
+            android:overScrollFooter="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="20dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone">
+
+        </ExpandableListView>
+    </LinearLayout>
+</LinearLayout>

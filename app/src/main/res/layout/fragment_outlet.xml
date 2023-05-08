@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:rotationY="@integer/view_pager_rotation"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/frg_category_outlets_lsv_autocomplte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/lst_item_bg"
+            android:childDivider="@color/white"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:layoutAnimation="@anim/anim_pointer"
+            android:id="@+id/frg_category_outlets_lsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="12dp"
+            android:clipToPadding="false"
+            android:paddingTop="0dp"
+            android:background="@color/transparent"
+            android:childDivider="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:nestedScrollingEnabled="true"
+            android:listSelector="@android:color/transparent"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/frg_category_outlets_txv_nt_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_outlets_found"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fontsize_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
