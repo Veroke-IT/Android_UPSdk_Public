@@ -443,7 +443,7 @@ public class NewBrands_WebHit_Get_getAllNewBrands {
             private String startDatetime;
             private String endDatetime;
             private String redeemed;
-            private String isRedeeme;
+            private boolean isRedeeme;
             private String description;
             private String createdAt;
             private String searchTags;
@@ -528,12 +528,12 @@ public class NewBrands_WebHit_Get_getAllNewBrands {
                 return redeemed;
             }
 
-            public String getIsRedeeme() {
+            public boolean isRedeeme() {
                 return isRedeeme;
             }
 
-            public void setIsRedeeme(String isRedeeme) {
-                this.isRedeeme = isRedeeme;
+            public void setRedeeme(boolean redeeme) {
+                isRedeeme = redeeme;
             }
 
             public void setDescription(String description) {

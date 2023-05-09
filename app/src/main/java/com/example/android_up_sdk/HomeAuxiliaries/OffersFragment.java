@@ -219,7 +219,7 @@ public class OffersFragment extends Fragment implements View.OnClickListener {
 
 
 
-
+                boolean canRedeem = NewOffers_WebHit_Get_getOffers.responseObject.getData().get(i).isRedeeme();
 
                 String strImageUrl = "";
                 if (NewOffers_WebHit_Get_getOffers.responseObject.getData().get(i).getImage() != null) {
@@ -243,7 +243,7 @@ public class OffersFragment extends Fragment implements View.OnClickListener {
                         approxSavings,
                         false,
                         false,
-                        true,
+                        canRedeem,
                         NewOffers_WebHit_Get_getOffers.responseObject.getData().get(i).getRenew(),
                         NewOffers_WebHit_Get_getOffers.responseObject.getData().get(i).getRenewDate(),
                         NewOffers_WebHit_Get_getOffers.responseObject.getData().get(i).getEndDatetime(),

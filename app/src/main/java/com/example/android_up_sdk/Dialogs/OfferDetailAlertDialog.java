@@ -85,11 +85,25 @@ public class OfferDetailAlertDialog extends BottomSheetDialog implements View.On
 
         LinearLayout llDetainNExclusion = findViewById(R.id.dlg_offer_detail_alrt_ll_detail_exclusion);
         Button btnUseOffer = findViewById(R.id.dlg_offer_detail_alrt_btn_use_offer);
+        Button btnUsedOffer = findViewById(R.id.dlg_offer_detail_alrt_btn_used_offer);
 
         LinearLayout llDescriptionContainer = findViewById(R.id.dlg_offer_detail_alrt_ll_desc_container);
 
         btnUseOffer.setOnClickListener(this);
         txvTermsOfUse.setOnClickListener(this);
+
+        Log.d("Check","Can "+dModel_offerDetail.isCanRedeem());
+
+        if (dModel_offerDetail.isCanRedeem()) {
+            btnUsedOffer.setVisibility(View.GONE);
+            btnUseOffer.setVisibility(View.VISIBLE);
+        }
+        else  {
+            btnUsedOffer.setVisibility(View.VISIBLE);
+            btnUseOffer.setVisibility(View.GONE);
+
+        }
+
 
 
 

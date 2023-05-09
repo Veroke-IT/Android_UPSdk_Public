@@ -604,6 +604,7 @@ public class MerchantDetailFragment extends Fragment implements View.OnClickList
                     approxPerRounded = (int) approxPerFloat;
                     String savedPer =  "" + approxPerRounded;
 
+                    boolean canRedeem = MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).isRedeeme();
 
                     String special, specialType;
                     if (MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).getSpecial() != null &&
@@ -636,7 +637,7 @@ public class MerchantDetailFragment extends Fragment implements View.OnClickList
                             approxSavings,
                             false,
                             false,
-                            true,
+                            canRedeem,
                             MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).getRenew(),
                             MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).getRenewDate(),
                             MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).getEndDatetime(),
@@ -733,6 +734,7 @@ public class MerchantDetailFragment extends Fragment implements View.OnClickList
                     float approxPerFloat = Float.parseFloat(savedPercentage);
                     approxPerRounded = (int) approxPerFloat;
                     String savedPer =  "" + approxPerRounded;
+                    boolean canRedeem = MerchantDetail_WebHit_Get_getMerchantDetailOffers.responseObject.getData().get(i).isRedeeme();
 
                     String special, specialType;
                     if (MerchantDetail_WebHit_Get_getMerchantDetailOffers.responseObject.getData().get(i).getSpecial() != null &&
@@ -766,7 +768,7 @@ public class MerchantDetailFragment extends Fragment implements View.OnClickList
                             approxSavings,
                             false,
                             false,
-                            true,
+                            canRedeem,
                             MerchantDetail_WebHit_Get_getMerchantDetailOffers.responseObject.getData().get(i).getRenew(),
                             MerchantDetail_WebHit_Get_getMerchantDetailOffers.responseObject.getData().get(i).getRenewDate(),
                             MerchantDetail_WebHit_Get_getMerchantDetail.responseObject.getData().get(0).getOffers().get(i).getEndDatetime(),

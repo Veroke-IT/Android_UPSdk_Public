@@ -146,7 +146,7 @@ public class MerchantDetail_WebHit_Get_getMerchantDetail {
             private String redeemed;
 
             @SerializedName("isRedeeme")
-            private String isRedeeme;
+            private boolean isRedeeme;
 
             @SerializedName("can_send_gift")
             private boolean canSendGift;
@@ -300,12 +300,12 @@ public class MerchantDetail_WebHit_Get_getMerchantDetail {
                 return redeemed;
             }
 
-            public String getIsRedeeme() {
+            public boolean isRedeeme() {
                 return isRedeeme;
             }
 
-            public void setIsRedeeme(String isRedeeme) {
-                this.isRedeeme = isRedeeme;
+            public void setRedeeme(boolean redeeme) {
+                isRedeeme = redeeme;
             }
 
             public void setActive(String active) {

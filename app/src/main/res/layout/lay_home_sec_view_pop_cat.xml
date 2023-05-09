@@ -5,7 +5,6 @@
     android:clickable="true"
     android:orientation="vertical"
     android:animateLayoutChanges="true"
-    android:paddingTop="5dp"
     android:paddingBottom="15dp">
 
     <RelativeLayout

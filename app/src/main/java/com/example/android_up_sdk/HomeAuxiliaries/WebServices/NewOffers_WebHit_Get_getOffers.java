@@ -342,9 +342,15 @@ public class NewOffers_WebHit_Get_getOffers {
 
             private String redeemed;
 
+            private boolean isRedeeme;
 
+            public boolean isRedeeme() {
+                return isRedeeme;
+            }
 
-
+            public void setRedeeme(boolean redeeme) {
+                isRedeeme = redeeme;
+            }
 
             public String getRedeemed() {
                 return this.redeemed;

@@ -389,14 +389,14 @@ public class CategoryOffers_WebHit_Get_getOutlet {
 
             private String redeemed;
 
-            private String isRedeeme;
+            private boolean isRedeeme;
 
-            public String getIsRedeeme() {
+            public boolean isRedeeme() {
                 return isRedeeme;
             }
 
-            public void setIsRedeeme(String isRedeeme) {
-                this.isRedeeme = isRedeeme;
+            public void setRedeeme(boolean redeeme) {
+                isRedeeme = redeeme;
             }
 
             public String getRedeemed() {

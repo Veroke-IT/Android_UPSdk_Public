@@ -390,18 +390,14 @@ public class NewBrandsFragment extends Fragment {
         ((MainUPActivity) requireActivity()).navToCategoryHubFragment(bundle);
     }
 
-    public void navToMerchantDetailFragment(Bundle bundle) {
+    public void navToMerchantDetailFragment(Bundle b) {
         if (getActivity() != null && isAdded()) {
-            Fragment fr = new MerchantDetailFragment();
-            fr.setArguments(bundle);
-            FragmentManager fm = requireActivity().getSupportFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.add(R.id.main_act_content_frame, fr, AppConstt.FrgTag.MerchantDetailFragment);
-            ft.addToBackStack(AppConstt.FrgTag.MerchantDetailFragment);
-//            ft.hide(this);
-            ft.commit();
+//           Calling it from mainActivity:to resolve the crash occurs due to CleverTap lib version:4.0 .1
+            ((MainUPActivity)getActivity()).navToMerchantDetailFragment(b);
         }
+
     }
+
 
     //endregion
 
@@ -560,6 +556,7 @@ public class NewBrandsFragment extends Fragment {
                             approxPerRounded = (int) approxPerFloat;
                             String savedPer =  "" + approxPerRounded;
 
+                            boolean canRedeem = NewBrands_WebHit_Get_getAllNewBrands.responseObject.getData().get(i).getOutlets().get(0).getOffers().get(j).isRedeeme();
 
 
                             lstParentOutletsChild.add(new DModelParentList.Child(
@@ -573,7 +570,7 @@ public class NewBrandsFragment extends Fragment {
                                     special,
                                     NewBrands_WebHit_Get_getAllNewBrands.responseObject.getData().get(i).getOutlets().get(0).getOffers().get(j).getValidFor(),
                                     approxSavings,
-                                    false, true,
+                                    false, canRedeem,
                                     NewBrands_WebHit_Get_getAllNewBrands.responseObject.getData().get(i).getOutlets().get(0).getOffers().get(j).getRenew(),
                                     NewBrands_WebHit_Get_getAllNewBrands.responseObject.getData().get(i).getOutlets().get(0).getOffers().get(j).getRenewDate(),
                                     NewBrands_WebHit_Get_getAllNewBrands.responseObject.getData().get(i).getOutlets().get(0).getOffers().get(j).getEndDatetime(),

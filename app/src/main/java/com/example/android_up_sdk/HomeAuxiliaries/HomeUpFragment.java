@@ -792,7 +792,7 @@ public class HomeUpFragment extends Fragment implements View.OnClickListener {
                     approxPerRounded = (int) approxPerFloat;
                     String savedPer =  "" + approxPerRounded;
 
-
+                    boolean canRedeem = Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getIsRedeeme().equalsIgnoreCase("1");
 
                     lstOffersUseAgain.add(new DModel_OfferUseAgain(
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getId(),
@@ -809,7 +809,7 @@ public class HomeUpFragment extends Fragment implements View.OnClickListener {
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getDescription(),
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getValidFor(),
                             false,
-                            true,
+                            canRedeem,
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getEndDatetime(),
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).isCanSendGift(),
                             Home_WebHit_Post_HomeApiEssential.responseObject.getData().getOfferUsedAgain().get(i).getDiscountType(),

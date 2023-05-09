@@ -58,6 +58,7 @@
         </com.dd.ShadowLayout>
 
         <LinearLayout
+            android:id="@+id/ll"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/shadow_layout"
@@ -99,19 +100,20 @@
                 android:layout_gravity="start"
                 android:layout_marginTop="3dp"
                 android:ellipsize="end"
-                android:lines="1"
-                android:text="Food and Drinks"
+                android:maxLines="2"
+                android:text="Food and Drinks Food and Drinks"
                 android:textAlignment="viewStart"
                 android:textColor="@color/textColorPrimaryDark"
                 android:textSize="@dimen/fontsize_mini"
                 android:textStyle="bold" />
 
             <TextView
+                android:layout_below="@+id/ll"
                 android:id="@+id/layhomenearbyoutlet_txv_offer_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:ellipsize="end"
                 android:text="Food and Drinks"
                 android:textAlignment="viewStart"
@@ -119,7 +121,23 @@
                 android:textSize="@dimen/fontsize_mini"
                 android:textStyle="bold"/>
 
+
+
         </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:textColor="@color/thm_accent_cyan"
+            android:textSize="@dimen/fontsize_tiny"
+            android:textStyle="bold"/>
+
 
     </RelativeLayout>
 

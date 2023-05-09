@@ -558,7 +558,7 @@ public class OutletFragment extends Fragment {
                             approxPerRounded = (int) approxPerFloat;
                             String savedPer =  "" + approxPerRounded;
 
-
+                            boolean canRedeem = CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).isRedeeme();
 
                             String strImageUrl = "";
                             if (CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getImage() != null) {
@@ -577,7 +577,7 @@ public class OutletFragment extends Fragment {
                                     approxSavings,
                                     CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getCategory_ids(),
                                     CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getOutlet_name(),
-                                    false, true,
+                                    false, canRedeem,
                                     CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getRenew(),
                                     CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getRenewDate(),
                                     CategoryOffers_WebHit_Get_getOutlet.responseObject.getData().get(i).getOffers().get(j).getEndDatetime(),

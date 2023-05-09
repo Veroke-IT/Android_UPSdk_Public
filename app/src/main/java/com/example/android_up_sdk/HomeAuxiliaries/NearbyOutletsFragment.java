@@ -32,6 +32,7 @@ import com.example.android_up_sdk.HomeAuxiliaries.ModelClasses.DModelMerchintLis
 import com.example.android_up_sdk.HomeAuxiliaries.ModelClasses.DModel_OfferDetail;
 import com.example.android_up_sdk.HomeAuxiliaries.ModelClasses.DModel_Recent_Outlet;
 import com.example.android_up_sdk.HomeAuxiliaries.WebServices.NearbyOutlets_WebHit_Get_getOutletsNew;
+import com.example.android_up_sdk.MainUPActivity;
 import com.example.android_up_sdk.MerchantDetailFragment;
 import com.example.android_up_sdk.R;
 import com.example.android_up_sdk.Utils.AppConfig;
@@ -486,6 +487,8 @@ public class NearbyOutletsFragment extends Fragment {
                             if (NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getImage() != null) {
                                 strImageUrl = NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getImage();
                             }
+                            boolean canRedeem = NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getIsRedeeme();
+
                             lstParentOutletsChild.add(new DModelMerchintList.Child(
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getId(),
                                     strImageUrl,
@@ -499,7 +502,7 @@ public class NearbyOutletsFragment extends Fragment {
                                     approxSavings,
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getCategory_ids(),
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getOutlet_name(),
-                                    false, true,
+                                    false, canRedeem,
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getRenew(),
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getRenewDate(),
                                     NearbyOutlets_WebHit_Get_getOutletsNew.responseObject.getData().get(i).getOffers().get(j).getEndDatetime(),
@@ -564,19 +567,14 @@ public class NearbyOutletsFragment extends Fragment {
         }
     }
 
-
-    public void navToMerchantDetailFragment(Bundle bundle) {
+    public void navToMerchantDetailFragment(Bundle b) {
         if (getActivity() != null && isAdded()) {
-            Fragment fr = new MerchantDetailFragment();
-            fr.setArguments(bundle);
-            FragmentManager fm = getActivity().getSupportFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.add(R.id.main_act_content_frame, fr, AppConstt.FrgTag.MerchantDetailFragment);
-            ft.addToBackStack(AppConstt.FrgTag.MerchantDetailFragment);
-            ft.hide(this);
-            ft.commit();
+//           Calling it from mainActivity:to resolve the crash occurs due to CleverTap lib version:4.0 .1
+            ((MainUPActivity)getActivity()).navToMerchantDetailFragment(b);
         }
+
     }
+
 
     //endregion
 
